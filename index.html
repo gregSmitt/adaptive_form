@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css?_v=20230406092103">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="page">
+	<div class="wrapper">
+		<main class="main">
+			<button data-event="popup-open" data-id="1" class="main__button button button_light">
+				Открыть модальное окно
+			</button>
+		</main>
+	</div>
+	<div data-id="1" aria-hidden="true" class="popup popup_none">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<form data-id="1" action="submit" class="form form-partnership">
+					<h2 class="form-partnership__title">
+						Стать партнёром проекта
+					</h2>
+					<div class="form-partnership__row">
+						<div class="form-partnership__col">
+							<div type="text" data-form="1" data-input-id="1"
+								class="form-partnership__input input input_require">
+								<label for="input__label" class="input__label">
+									<span class="marker-required">✱</span>
+									Название организации
+								</label>
+								<input class="input__field input__field_with-label" value="">
+							</div>
+							<div type="text" data-form="1" data-input-id="2"
+								class="form-partnership__input input input_require input_phone">
+								<label for="input__label" class="input__label">
+									<span class="marker-required">✱</span>
+									Телефон
+								</label>
+								<input class="input__field input__field_with-label" value="+7 933 848-34-33">
+							</div>
+							<div data-form="1" data-input-id="3"
+								class="form-partnership__input input inputput_require input_email">
+								<label for="input__label" class="input__label">
+									<span class="marker-required">✱</span>
+									E-mail
+								</label>
+								<input type="email" class="input__field input__field_with-label" value="avc@gmail.com">
+							</div>
+						</div>
+						<div data-form="1" data-input-id="4" class="form-partnership__input-file input-file">
+							<p class="input-file__label">
+								<span class="marker-required">✱</span>
+								Логотип (jpeg, png)
+							</p>
+							<label for="input-file__input" class="input-file__wrapper">
+								<div class="input-file__cancel cancel-cross">
+									<img src="img/icons/close_Icon.svg" alt="cancel_icon" class="cancel-cross__img">
+								</div>
+								<img src="img/icons/darg_n_drop_icon.svg" alt="darg_n_drop_icon"
+									class="input-file__darg-drop-icon">
+								<p class="input-file__description">Выберите файл</p>
+								<div class="input-file__preview-wrapper">
+									<img src="img/photo/man.png" alt="preview logo" class="input-file__preview">
+								</div>
+								<input type="file" id="input-file__input" accept="image/png, image/jpeg"
+									class="input-file__input">
+							</label>
+						</div>
+					</div>
+					<div data-form="1" data-input-id="5" class="select form-partnership__select select_require">
+						<label class="select__label">
+							<span class="marker-required">✱</span>
+							Направление
+						</label>
+						<div class="select__img-wrapper">
+							<img src="img/icons/checked_icon.svg" class="select__img" alt="img">
+						</div>
+						<select name="vector" id="" class="select__controller select__controller_with-img-and-label">
+							<option class="select__option" value="eko">Экология</option>
+							<option class="select__option" value="nuklear">Ядерная энергетика</option>
+						</select>
+					</div>
+					<div data-form="1" data-input-id="6" class="form-partnership__input input">
+						<div class="input__img-wrapper">
+							<img src="img/icons/global_icon.svg" class="input__img input__img_web" alt="img">
+						</div>
+						<input type="text" class="input__field input__field_with-img" value="avc.ru">
+					</div>
+					<div data-form="1" data-input-id="7" class="form-partnership__input input">
+						<div class="input__img-wrapper">
+							<img src="img/icons/vk_icon.svg" class="input__img" alt="img">
+						</div>
+						<input type="text" class="input__field input__field_with-img" value="vk.com/shans">
+					</div>
+					<div data-form="1" data-input-id="8" class="form-partnership__input input">
+						<div class="input__img-wrapper">
+							<img src="img/icons/odnoklassniki_icon.svg" class="input__img input__img_ok" alt="img">
+						</div>
+						<input type="text" class="input__field input__field_with-img" value="ok.com/shans">
+					</div>
+					<div data-form="1" data-input-id="9" class="form-partnership__input input">
+						<div class="input__img-wrapper">
+							<img src="img/icons/fb_icon.svg" class="input__img input__img_fb" alt="img">
+						</div>
+						<input type="text" class="input__field input__field_with-img" value="facebook.com/shans">
+					</div>
+					<div data-form="1" data-input-id="10" class="form-partnership__input input">
+						<div class="input__img-wrapper">
+							<img src="img/icons/Instagram_icon.svg" class="input__img input__img_inst" alt="instagram">
+						</div>
+						<input type="text" class="input__field input__field_with-img" value="instagram.com/shans">
+					</div>
+					<div data-form="1" data-input-id="11" class="form-partnership__input input">
+						<div class="input__img-wrapper">
+							<img src="img/icons/youtube_icon.svg" class="input__img" alt="youtube">
+						</div>
+						<input type="text" class="input__field input__field_with-img" value="youtube.com/shans">
+					</div>
+					<div data-form="1" data-input-id="12" class="form-partnership__input_last input">
+						<label for="input__label" class="input__label">
+							Руководитель
+						</label>
+						<input type="text" class="input__field input__field_with-label" value="Александров Иван Васильевич">
+					</div>
+					<button data-form="1" class="form-partnership__button-submit button">Стать партнёром проекта</button>
+				</form>
+				<button type="button" class="popup__close">Отменить</button>
+			</div>
+		</div>
+	</div>
+	<div data-id="2" aria-hidden="true" class="popup popup_none">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Отменить</button>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js?_v=20230406092103"></script>
+</body>
+
+</html>
