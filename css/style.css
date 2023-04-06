@@ -661,7 +661,8 @@ h6 {
 }
 
 .button .button_disabled,
-.button:disabled {
+.button:disabled,
+.button:disabled.button:active{
   background: #D6DADE;
   cursor: auto;
 }
